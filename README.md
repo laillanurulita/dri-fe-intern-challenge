@@ -24,6 +24,7 @@ This project is a responsive frontend implementation of the Monkey Coffee landin
 - TypeScript
 - Tailwind CSS
 - ESLint
+- Lucide React
 
 ## Installation
 
