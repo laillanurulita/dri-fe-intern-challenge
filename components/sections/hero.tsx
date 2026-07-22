@@ -23,7 +23,7 @@ export default function Hero() {
           duration: 0.8,
           ease: "easeOut",
         }}
-        className="text-6xl md:text-6xl font-medium font-playfair leading-tight sm:text-7xl lg:text-8xl">
+        className="text-5xl md:text-6xl font-medium font-playfair leading-tight sm:text-6xl lg:text-7xl">
           Find Your Coffee, Bar & 
          <br className="hidden sm:block" />
           <span className="sm:hidden"> </span>
@@ -38,7 +38,7 @@ export default function Hero() {
           delay: 0.3,
           ease: "easeOut",
         }}
-        className="mx-auto mt-8 text-2xl md:text-xl text-white sm:text-3xl lg:mt-10 lg:text-4xl">
+        className="mx-auto mt-8 text-lg md:text-xl text-white sm:text-xl lg:mt-10 lg:text-2xl">
           A cozy space to sip, work, and connect.
         </motion.p>
 
