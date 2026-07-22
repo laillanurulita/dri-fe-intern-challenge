@@ -41,14 +41,15 @@ const menus = [
 
 export default function SignatureMenu() {
   return (
-    <section className="py-28 px-24">
+    <section className="py-16 lg:py-28">
+    <div className="mx-auto max-w-7xl px-6">
       {/* Heading */}
       <div className="text-center max-w-2xl mx-auto">
         <p className="text-[#F15E01] font-normal text-sm">
           OUR CRAFT
         </p>
 
-        <h2 className="text-4xl md:text-5xl text-[#2A1A0B] font-medium mt-5">
+        <h2 className="text-4xl md:text-5xl text-[#2A1A0B] font-medium font-playfair mt-5 sm:text-4xl lg:text-6xl">
           Highlighted Signature
         </h2>
 
@@ -59,28 +60,26 @@ export default function SignatureMenu() {
       </div>
 
       {/* Menu Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-16">
+      <div className="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {menus.map((menu, index) => (
           <div
             key={index}
-            className="bg-white rounded-2xl overflow-hidden  transition"
+            className="overflow-hidden bg-white transition transition-all duration-300 hover:-translate-y-3  cursor-pointer"
           >
-            <div className="w-[400px]">
             <Image
                 src={menu.image}
                 alt={menu.title}
                 width={400}
                 height={467}
-                className="w-full h-[467px] rounded-2xl object-cover"
+                className="w-full h-[300px] sm:h-[360px] lg:h-[467px] rounded-2xl object-cover transition-transform duration-500 hover:scale-105"
             />
-            </div>
 
 
-            <p className="text-xs font-normal uppercase tracking-wider text-[#F15E01] mt-4">
+            <p className="text-xs font-normal text-[#F15E01] mt-4">
                 {menu.category}
             </p>
 
-              <h3 className="text-xl font-medium text-[#583120] mt-2">
+              <h3 className="text-xl font-semibold font-playfair text-[#583120] mt-2">
                 {menu.title}
               </h3>
 
@@ -93,9 +92,10 @@ export default function SignatureMenu() {
 
       {/* Button */}
       <div className="flex justify-center mt-16">
-        <button className="bg-[#843919] text-white px-6 py-4 rounded-4xl hover:bg-[#5A3E2C] transition">
+        <button className="bg-[#843919] text-white px-6 py-4 rounded-4xl hover:bg-[#5A3E2C] transition-all duration-300 hover:scale-105 active:scale-95">
           Explore Full Menu
         </button>
+      </div>
       </div>
     </section>
   );

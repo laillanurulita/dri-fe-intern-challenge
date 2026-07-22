@@ -2,19 +2,19 @@ import Image from "next/image";
 
 export default function Ambience() {
   return (
-    <section className="bg-[#FCFAF8] py-28">
-      <div className="mx-auto max-w-6xl px-6">
+    <section className="bg-[#FCFAF8] py-16 lg:py-28">
+      <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Heading */}
         <div className="mb-12 max-w-3xl">
           <p className="mb-5 text-xs font-normal text-[#F15E01]">
             AMBIENCE
           </p>
 
-          <h2 className="mb-6 font-serif font-medium text-4xl text-[#2A1A0B]">
+          <h2 className="mb-6 font-playfair text-3xl font-medium text-[#2A1A0B] md:text-4xl">
             Where Moments Happen
           </h2>
 
-          <p className="max-w-3xl text-sm font-normal leading-8 text-[#737373]">
+          <p className="max-w-3xl text-sm leading-8 text-[#737373]">
             A space designed for those who appreciate the finer details. From
             the natural light that fills our space to the carefully curated
             seating arrangements, every element is crafted to create an
@@ -23,70 +23,62 @@ export default function Ambience() {
         </div>
 
         {/* Gallery */}
-       <div className="grid grid-cols-12 gap-4">
-          {/* Gambar besar kiri */}
-          <div className="col-span-8 row-span-2">
+        <div className="grid gap-4 lg:grid-cols-12">
+          {/* Gambar besar */}
+          <div className="lg:col-span-8">
             <Image
-                src="/images/galerry1.jpg"
-                alt=""
-                width={784}
-                height={784}
-                className="h-[784px] w-full rounded-xl object-cover"
+              src="/images/galerry1.jpg"
+              alt=""
+              width={784}
+              height={784}
+              className="h-[350px] w-full rounded-xl object-cover sm:h-[500px] lg:h-[784px] animate-wiggle"
             />
-            </div>
+          </div>
 
-          {/* Kanan atas */}
-          <div className="col-span-4">
+          {/* Kanan */}
+          <div className="grid gap-4 sm:grid-cols-2 lg:col-span-4 lg:grid-cols-1">
             <Image
-                src="/images/galerry2.jpg"
-                alt=""
-                width={384}
-                height={384}
-                 className="h-[384px] w-full rounded-xl object-cover"
+              src="/images/galerry2.jpg"
+              alt=""
+              width={384}
+              height={384}
+              className="h-[250px] w-full rounded-xl object-cover sm:h-[300px] lg:h-[384px] animate-wiggle"
             />
-            </div>
 
-          {/* Kanan tengah */}
-          <div className="col-span-4">
-              <Image
-                src="/images/galerry3.jpg"
-                alt="Coffee Shop"
-                width={384}
-                height={384}
-                  className="h-[384px] w-full rounded-xl object-cover"
-              />
-            </div>
-          {/* Bawah kiri */}
-          <div className="col-span-4">
-              <Image
-                src="/images/galerry6.jpg"
-                alt="Coffee Shop"
-                width={384}
-                height={384}
-                  className="h-[384px] w-full rounded-xl object-cover"
-              />
-            </div>
+            <Image
+              src="/images/galerry3.jpg"
+              alt=""
+              width={384}
+              height={384}
+              className="h-[250px] w-full rounded-xl object-cover sm:h-[300px] lg:h-[384px] animate-wiggle"
+            />
+          </div>
 
-          {/* Bawah tengah */}
-          <div className="col-span-4">
-              <Image
-                src="/images/galerry5.jpg"
-                alt="Roastery"
-                width={384}
-                height={384}
-                  className="h-[384px] w-full rounded-xl object-cover"
-              />
-            </div>
+          {/* Bawah */}
+          <div className="grid gap-4 sm:grid-cols-2 lg:col-span-12 lg:grid-cols-3">
+            <Image
+              src="/images/galerry6.jpg"
+              alt=""
+              width={384}
+              height={384}
+              className="h-[250px] w-full rounded-xl object-cover sm:h-[300px] lg:h-[384px] animate-wiggle"
+            />
 
-          {/* Bawah kanan */}
-          <div className="col-span-4">
-              <Image
-                src="/images/galerry4.jpg"
-                alt="Coffee Bar"
-                width={384}
-                height={384}
-             className="h-[384px] w-full rounded-xl object-cover"
-              />
+            <Image
+              src="/images/galerry5.jpg"
+              alt=""
+              width={384}
+              height={384}
+              className="h-[250px] w-full rounded-xl object-cover sm:h-[300px] lg:h-[384px] animate-wiggle"
+            />
+
+            <Image
+              src="/images/galerry4.jpg"
+              alt=""
+              width={384}
+              height={384}
+              className="h-[250px] w-full rounded-xl object-cover sm:h-[300px] lg:h-[384px] animate-wiggle"
+            />
           </div>
         </div>
       </div>

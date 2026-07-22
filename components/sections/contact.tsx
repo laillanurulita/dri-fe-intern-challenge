@@ -12,14 +12,14 @@ Kec. Pontianak Kota, Kota Pontianak, Kalimantan Barat 78117`,
 
 export default function Contact() {
   return (
-    <section className="bg-white py-28 px-20">
+    <section className="bg-white px-6 py-16 sm:px-8 md:px-12 lg:px-20 lg:py-28">
       <div className="mx-auto grid max-w-6xl grid-cols-1 items-start gap-16 px-6 md:grid-cols-2">
         <div>
           <p className="mb-5 text-sm font-normal text-[#F15E01]">
             VISIT US
           </p>
 
-          <h2 className="mb-12 font-serif font-medium text-4xl text-[#2A1A0B]">
+          <h2 className="mb-12 font-playfair font-medium text-4xl text-[#2A1A0B] sm:text-5xl lg:text-6xl">
            Come say hello!
           </h2>
 
@@ -28,7 +28,7 @@ export default function Contact() {
               <h3 className="mb-2 text-xs text-[#2A1A0B]">
                 ADDRESS
               </h3>
-              <p className="whitespace-pre-line">{contact.address}</p>
+              <p className="max-w-sm whitespace-pre-line leading-7">{contact.address}</p>
             </div>
 
             <div>
@@ -48,17 +48,16 @@ export default function Contact() {
         </div>
 
         <div className="flex justify-center md:justify-end">
-          <div className="relative  overflow-hidden rounded-xl">
             <Image
               src="/images/monkeyground.jpg"
               alt="Branding Coffee shop"
               width={480}
               height={715}
+              className="h-auto w-full max-w-[480px] rounded-xl object-cover"
     
             />
           </div>
         </div>
-      </div>
     </section>
   );
 }
