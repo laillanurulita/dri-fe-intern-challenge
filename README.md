@@ -73,4 +73,5 @@ If cart persistence were required, I would store the cart data in `localStorage`
 ## Author
 
 Lailla Nurulita Ramadhani
+
 Frontend Developer Enthusiast
