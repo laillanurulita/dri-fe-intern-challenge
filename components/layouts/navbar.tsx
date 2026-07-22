@@ -13,7 +13,7 @@ export default function Navbar() {
         />
 
         {/* Button */}
-        <button className="rounded-[20px] bg-[#843919] px-4 py-2 text-sm text-white">
+        <button className="rounded-[20px] bg-[#843919] hover:bg-[#5A3E2C] px-4 py-2 text-sm text-white">
           Visit Us
         </button>
       </div>
