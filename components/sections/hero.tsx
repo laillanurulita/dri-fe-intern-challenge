@@ -69,7 +69,7 @@ export default function Hero() {
             hover:bg-gray-200
             sm:px-8
             sm:py-5
-            sm:text-base
+            sm:text-lg
             transition-all
             duration-300
             hover:scale-105
