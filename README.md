@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Monkey Coffee Landing Page
 
-## Getting Started
+This project is a responsive frontend implementation of the Monkey Coffee landing page, built with Next.js and Tailwind CSS as part of a Frontend Internship Technical Challenge. The goal of this project is to translate the provided Figma design into a responsive and interactive website while following modern frontend development practices.
 
-First, run the development server:
+## Live Demo
+- https://dri-fe-intern-challenge.vercel.app/
+
+## Github Repository 
+- https://github.com/laillanurulita/dri-fe-intern-challenge
+
+## Features
+
+- Responsive landing page
+- Reusable React components
+- Built with Next.js App Router
+- Styled using Tailwind CSS
+- Optimized image rendering with Next.js Image
+- Clean and structured component architecture
+
+## Technologies Used
+
+- Next.js 16
+- React
+- TypeScript
+- Tailwind CSS
+- ESLint
+
+## Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/laillanurulita/dri-fe-intern-challenge.git
+```
+
+2. Go to the project directory
+
+```bash
+cd dri-fe-intern-challenge
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Run the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Build
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Hydration & Cart Persistence
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project focuses on implementing the landing page based on the provided Figma design. Therefore, shopping cart persistence was not included in the scope of this project.
 
-## Deploy on Vercel
+If cart persistence were required, I would store the cart data in `localStorage` and initialize it after the component mounts using React's `useEffect`. This approach prevents hydration mismatches by ensuring that browser-only APIs are accessed only on the client side after server-side rendering has completed.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Author
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Lailla Nurulita Ramadhani
+Frontend Developer Enthusiast
