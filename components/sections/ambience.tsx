@@ -57,7 +57,7 @@ export default function Ambience() {
           {/* Bawah */}
           <div className="grid gap-4 sm:grid-cols-2 lg:col-span-12 lg:grid-cols-3">
             <Image
-              src="/images/galerry6.jpg"
+              src="/images/galerry4.jpg"
               alt=""
               width={384}
               height={384}
@@ -73,7 +73,7 @@ export default function Ambience() {
             />
 
             <Image
-              src="/images/galerry4.jpg"
+              src="/images/galerry6.jpg"
               alt=""
               width={384}
               height={384}
